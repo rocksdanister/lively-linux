@@ -9,6 +9,7 @@ Very early, only basic user interface works now.
 Wallpapers do **NOT** work yet.
 
 ## Plan
+Very early, everything is subject to change.
 - Desktop: KDE ???
 - Language/runtime: [.NET 5.0](https://github.com/dotnet/runtime)
 - UI: [AvaloniaUI](https://github.com/AvaloniaUI/Avalonia)
