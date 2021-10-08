@@ -16,6 +16,7 @@ Wallpapers do **NOT** work yet.
 - UI: [AvaloniaUI](https://github.com/AvaloniaUI/Avalonia)
 - Video player: [mpv](https://github.com/mpv-player/mpv) / [Mpv.Net](https://github.com/mireo91/Mpv.NET-lib-)
 - Web Browser: ???
+
 Not finalized, everything is subject to change.
 
 ## How to build
