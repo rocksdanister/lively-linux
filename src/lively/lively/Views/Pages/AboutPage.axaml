@@ -1,0 +1,16 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="lively.Views.Pages.AboutPage">
+  <Grid>
+    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+      <TextBlock FontSize="25" Margin="0, 0, 5, 0" FontWeight="Medium" Text="Lively Wallpaper"/>
+      <TextBlock Text="v1.0" FontSize="15" Margin="5" VerticalAlignment="Center"/>
+      <StackPanel HorizontalAlignment="Center" Margin="5">
+        <Button ToolTip.Tip="https://github.com/rocksdanister/lively" Click="OnSrcButtonClick">Source Code</Button>
+      </StackPanel>
+    </StackPanel>
+  </Grid>
+</UserControl>

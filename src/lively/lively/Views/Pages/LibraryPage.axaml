@@ -1,0 +1,48 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="lively.Views.Pages.LibraryPage"
+             xmlns:ext="clr-namespace:lively.Helpers.MVVM;assembly=lively">
+
+  <UserControl.Resources>
+    <ext:BitmapAssetValueConverter x:Key="variableImage"/>
+  </UserControl.Resources>
+  
+  <ListBox Items="{Binding LibraryItems}" SelectedItem="{Binding SelectedItem}" Background="Transparent">
+    <ListBox.Styles>
+      <Style Selector="ListBoxItem">
+        <Setter Property="Padding" Value="2.5"/>
+      </Style>
+    </ListBox.Styles>
+    <ListBox.ContextMenu>
+      <ContextMenu>
+        <MenuItem Header="About"/>
+        <MenuItem Header="Set Wallpaper"/>
+        <MenuItem Header="Preview Wallpaper"/>
+        <MenuItem Header="Customise Wallpaper"/>
+        <MenuItem Header="Open File Location"/>
+        <MenuItem Header="Export Lively .Zip"/>
+        <MenuItem Header="Delete Wallpaper"/>
+      </ContextMenu>
+    </ListBox.ContextMenu>
+    <ItemsControl.ItemsPanel>
+      <ItemsPanelTemplate>
+        <WrapPanel/>
+      </ItemsPanelTemplate>
+    </ItemsControl.ItemsPanel>
+    <ListBox.ItemTemplate>
+      <DataTemplate>
+        <Grid Width="272" Height="153">
+          <Image Source="{Binding ImagePath, Converter={StaticResource variableImage}}"
+            Stretch="UniformToFill"/>
+          <StackPanel VerticalAlignment="Bottom" Height="60" Background="#80000000">
+            <TextBlock Margin="5,0,0,0" Text="{Binding Title}" VerticalAlignment="Bottom"/>
+            <TextBlock Margin="5,0,0,0" TextWrapping="Wrap" FontSize="12.5" Text="{Binding Desc}" Foreground="#BFFFFFFF"/>
+          </StackPanel>
+        </Grid>
+      </DataTemplate>
+    </ListBox.ItemTemplate>
+  </ListBox>
+</UserControl>

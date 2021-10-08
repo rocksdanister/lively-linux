@@ -1,0 +1,29 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:pages="clr-namespace:lively.Views.Pages;assembly=lively"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        MinWidth="850" MinHeight="450"
+        Background="#BF252423"
+        ExtendClientAreaChromeHints="PreferSystemChrome"
+        ExtendClientAreaToDecorationsHint="True"
+        ExtendClientAreaTitleBarHeightHint="-1"
+        TransparencyLevelHint="AcrylicBlur"
+        SystemDecorations="Full"
+        x:Class="lively.MainWindow"
+        Title="Lively Wallpaper">
+  
+  <Window.Styles>  
+  </Window.Styles>  
+  <Grid>
+    <TabControl Classes="sidebar" TabStripPlacement="Left" Margin="0, 50, 0, 0">
+      <TabItem Header="P1">
+        <pages:LibraryPage/>
+      </TabItem>
+      <TabItem Header="P2">
+        <pages:AboutPage/>
+      </TabItem>
+    </TabControl> 
+  </Grid>
+</Window>
