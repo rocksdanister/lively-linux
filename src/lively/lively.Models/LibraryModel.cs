@@ -1,14 +1,12 @@
-﻿using lively.Helpers;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.IO;
-using System.Security.Cryptography;
-using System.Text;
-using lively.Helpers.MVVM;
+using lively.Common;
+using lively.Common.Helpers.MVVM;
 
-namespace lively
+namespace lively.Models
 {
     public enum LibraryTileType
     {
@@ -78,8 +76,8 @@ namespace lively
             else
             {
                 //Only relative path is stored, this will be inside "Lively Wallpaper" folder.
-                if (data.Type == lively.WallpaperType.url 
-                || data.Type == lively.WallpaperType.videostream)
+                if (data.Type == WallpaperType.url 
+                || data.Type == WallpaperType.videostream)
                 {
                     //no file.
                     FilePath = data.FileName;
@@ -127,10 +125,10 @@ namespace lively
             LivelyInfoFolderPath = folderPath;
             ImagePath = ThumbnailPath;
 
-            if (data.Type == lively.WallpaperType.video || 
-                data.Type == lively.WallpaperType.videostream || 
-                data.Type == lively.WallpaperType.gif || 
-                data.Type == lively.WallpaperType.picture)
+            if (data.Type == WallpaperType.video || 
+                data.Type == WallpaperType.videostream || 
+                data.Type == WallpaperType.gif || 
+                data.Type == WallpaperType.picture)
             {
                 //No user made livelyproperties file if missing, using default for video.
                 if(LivelyPropertyPath == null)
@@ -174,8 +172,8 @@ namespace lively
             get { return _filePath; }
             set
             {
-                if (LivelyInfo.Type == lively.WallpaperType.url 
-                || LivelyInfo.Type == lively.WallpaperType.videostream)
+                if (LivelyInfo.Type == WallpaperType.url 
+                || LivelyInfo.Type == WallpaperType.videostream)
                 {
                     _filePath = value;
                 }
@@ -235,7 +233,7 @@ namespace lively
             }
             set
             {
-                _desc = string.IsNullOrWhiteSpace(value) ? WallpaperType : (value.Length > 5000 ? value.Substring(0, 5000) : value);
+                _desc = string.IsNullOrWhiteSpace(value) ? WallpaperCategory : (value.Length > 5000 ? value.Substring(0, 5000) : value);
                 OnPropertyChanged();
             }
         }
@@ -296,19 +294,19 @@ namespace lively
             }
         }
 
-        private string _wallpaperType;
+        private string _wallpaperCategory;
         /// <summary>
         /// Localised wallpapertype text.
         /// </summary>
-        public string WallpaperType
+        public string WallpaperCategory
         {
             get
             {
-                return _wallpaperType;
+                return _wallpaperCategory;
             }
             set
             {
-                _wallpaperType = value;
+                _wallpaperCategory = value;
                 OnPropertyChanged();
             }
         }

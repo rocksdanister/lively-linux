@@ -9,6 +9,7 @@ namespace lively.Views.Pages
         public LibraryPage()
         {
             InitializeComponent();
+            this.DataContext = new LibraryViewModel();
         }
 
         private void InitializeComponent()

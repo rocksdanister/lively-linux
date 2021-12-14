@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
-namespace lively.Helpers.Zip
+namespace lively.Common.Helpers.Archive
 {
     public static class ZipCreate
     {

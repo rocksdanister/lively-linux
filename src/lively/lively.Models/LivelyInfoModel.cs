@@ -1,8 +1,9 @@
-﻿using System;
+﻿using lively.Common;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace lively
+namespace lively.Models
 {
     /// <summary>
     /// livelyinfo.json wallpaper metadata file structure.

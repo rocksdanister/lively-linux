@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace lively.Helpers
+namespace lively.Common.Helpers
 {
     public static class LinkHandler
     {

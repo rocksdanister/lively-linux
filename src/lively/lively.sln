@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lively", "lively\lively.csproj", "{46D2FBE2-BD8C-4CE3-B9E7-23DD04B6D864}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lively", "lively\lively.csproj", "{46D2FBE2-BD8C-4CE3-B9E7-23DD04B6D864}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lively.Common", "lively.Common\lively.Common.csproj", "{38C34B2E-A6FD-4599-BF44-EB1DB35AE31A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lively.Models", "lively.Models\lively.Models.csproj", "{9431DF1C-F7D4-4AD0-B656-4CEB18FB0CC8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{46D2FBE2-BD8C-4CE3-B9E7-23DD04B6D864}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46D2FBE2-BD8C-4CE3-B9E7-23DD04B6D864}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46D2FBE2-BD8C-4CE3-B9E7-23DD04B6D864}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38C34B2E-A6FD-4599-BF44-EB1DB35AE31A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38C34B2E-A6FD-4599-BF44-EB1DB35AE31A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38C34B2E-A6FD-4599-BF44-EB1DB35AE31A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38C34B2E-A6FD-4599-BF44-EB1DB35AE31A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9431DF1C-F7D4-4AD0-B656-4CEB18FB0CC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9431DF1C-F7D4-4AD0-B656-4CEB18FB0CC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9431DF1C-F7D4-4AD0-B656-4CEB18FB0CC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9431DF1C-F7D4-4AD0-B656-4CEB18FB0CC8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

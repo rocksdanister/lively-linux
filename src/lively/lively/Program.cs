@@ -9,11 +9,7 @@ namespace lively
 {
     class Program
     {
-        //private static readonly string uniqueAppName = "LIVELY:DESKTOPWALLPAPERSYSTEM";
-        //private static readonly Mutex mutex = new Mutex(false, uniqueAppName);
         public static string WallpaperDir { get; set; } = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "userdata", "library");
-        public static string AppDataDir { get; } = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "userdata");
-
 
         // Initialization code. Don't use any Avalonia, third-party APIs or any
         // SynchronizationContext-reliant code before AppMain is called: things aren't initialized

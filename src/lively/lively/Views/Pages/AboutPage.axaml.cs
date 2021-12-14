@@ -2,6 +2,7 @@ using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
+using lively.Common.Helpers;
 
 namespace lively.Views.Pages
 {
@@ -19,7 +20,7 @@ namespace lively.Views.Pages
 
         private void OnSrcButtonClick(object sender, RoutedEventArgs e)
         {
-            Helpers.LinkHandler.OpenBrowser("https://github.com/rocksdanister/lively");
+            LinkHandler.OpenBrowser("https://github.com/rocksdanister/lively");
         }
     }
 }

@@ -2,7 +2,7 @@
 using System;
 using System.IO;
 
-namespace lively.Helpers.Storage
+namespace lively.Common.Helpers.Storage
 {
     public static class JsonStorage<T>
     {

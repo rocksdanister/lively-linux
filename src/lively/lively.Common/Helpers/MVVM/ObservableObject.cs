@@ -5,7 +5,7 @@ using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using System.Text;
 
-namespace lively.Helpers.MVVM
+namespace lively.Common.Helpers.MVVM
 {
     //ref: https://rachel53461.wordpress.com/2011/05/08/simplemvvmexample/
     public abstract class ObservableObject : INotifyPropertyChanged
@@ -21,7 +21,7 @@ namespace lively.Helpers.MVVM
         /// Raises this object's PropertyChanged event.
         /// </summary>
         /// <param name="propertyName">The property that has a new value.</param>
-        protected virtual void OnPropertyChanged([CallerMemberName]string propertyName = "")
+        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = "")
         {
             this.VerifyPropertyName(propertyName);
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));

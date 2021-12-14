@@ -6,6 +6,7 @@ namespace lively
 {
     public class App : Application
     {
+        //TODO: DI
         public override void Initialize()
         {
             AvaloniaXamlLoader.Load(this);
@@ -16,7 +17,6 @@ namespace lively
             if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
             {
                 desktop.MainWindow = new MainWindow();
-                desktop.MainWindow.DataContext = new LibraryViewModel();
             }
 
             base.OnFrameworkInitializationCompleted();
