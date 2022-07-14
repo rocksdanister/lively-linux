@@ -29,7 +29,7 @@ basic user interface works by now.
 
 *Everything is subject to change.*
 
-- Language / Runtime : **[.NET 5.0]**
+- Language / Runtime : **[.NET 5 SDK]**
 
 - Video Player : **[MPV]** / **[MPV.Net]**
 
