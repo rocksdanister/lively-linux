@@ -1,27 +1,83 @@
-# lively-linux
-<img src="/resources/main.png" width="427" height="240"/>
 
-Experimental linux version of [Lively Wallpaper](https://github.com/rocksdanister/lively)
+# Lively Linux   ![Badge Contributions]   [![Badge License]][License]
 
-Contributions are welcome.
+*Experimental Linux version of **[Lively Wallpaper]**.*
+
+<br>
+
+<div align = center>
+
+<img
+    src = 'resources/main.png'
+    height = 400
+/>
+
+</div>
+
+<br>
+<br>
 
 ## Progress
-Very early, only basic user interface works now.
 
-Wallpapers do **NOT** work yet.
+The project is in it's very early stages and <br>
+wallpapers do not work yet, however the <br>
+basic user interface works by now.
 
-## Plan
-- Desktop: KDE ???
-- Language/runtime: [.NET 5.0](https://github.com/dotnet/runtime)
-- UI: [AvaloniaUI](https://github.com/AvaloniaUI/Avalonia)
-- Video player: [mpv](https://github.com/mpv-player/mpv) / [Mpv.Net](https://github.com/mireo91/Mpv.NET-lib-)
-- Web Browser: ???
+<br>
 
-Not finalized, everything is subject to change.
+### Plans
 
-## How to build
-Install [.NET 5 SDK](https://dotnet.microsoft.com/download), then navigate to project folder:
+*Everything is subject to change.*
 
+- Language / Runtime : **[.NET 5.0]**
+
+- Video Player : **[MPV]** / **[MPV.Net]**
+
+- Interface : **[AvaloniaUI]**
+
+- Web Browser : ***???***
+
+- Desktop : ***KDE ???***
+
+<br>
+<br>
+
+## Data
+
+Wallpapers are saved in:
+
+`<app_folder>/userdata/library/wallpapers`
+
+<br>
+<br>
+
+## Building
+
+1.  Install the **[.NET 5 SDK]**
+
+2. Navigate to project folder
+
+3. Build the project with:
+
+    ```shell
     dotnet build
-    
-Wallpapers are saved in `<app_folder>/userdata/library/wallpapers` folder.
+    ```
+
+<br>
+
+
+<!----------------------------------------------------------------------------->
+
+[Lively Wallpaper]: https://github.com/rocksdanister/lively
+[AvaloniaUI]: https://github.com/AvaloniaUI/Avalonia
+[.NET 5 SDK]: https://dotnet.microsoft.com/download
+[MPV.Net]: https://github.com/mireo91/Mpv.NET-lib-
+[MPV]: https://github.com/mpv-player/mpv
+
+[License]: LICENSE
+
+
+<!---------------------------------[ Badges ]---------------------------------->
+
+[Badge Contributions]: https://img.shields.io/badge/Contributions-Welcome-327c25?style=for-the-badge&logoColor=white&logo=GitHub&labelColor=44A833
+[Badge License]: https://img.shields.io/badge/License-GPL_3-02639a.svg?style=for-the-badge&labelColor=blue
